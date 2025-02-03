@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - HR Recruitment System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">HR Recruitment System</div>
+        <div class="nav-links">
+            <span id="userInfo"></span>
+            <a href="#" id="logoutBtn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <a href="#" id="jobsTab" class="active">Jobs</a>
+            <a href="#" id="applicationsTab">
+                <span id="applicationsTabText">My Applications</span>
+            </a>
+        </div>
+
+        <div class="main-content">
+            <div id="jobsSection">
+                <div class="action-bar">
+                    <h1>Available Jobs</h1>
+                    <div id="hrActions"></div>
+                </div>
+                <div id="jobListings" class="job-grid">
+                    <p>Loading jobs...</p>
+                </div>
+            </div>
+
+            <div id="applicationsSection" style="display: none;">
+                <h1 id="applicationsTitle">My Applications</h1>
+                <div id="applicationsList" class="applications-grid">
+                    <p>Loading applications...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 
